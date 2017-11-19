@@ -1,0 +1,48 @@
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.deps.json
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.json
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.dev.json
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.dll
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.pdb
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csprojResolveAssemblyReference.cache
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.AssemblyInfo.cs
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.dll
+C:\Users\Dan\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.pdb
+D:\Daniel\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.deps.json
+D:\Daniel\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.json
+D:\Daniel\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.dev.json
+D:\Daniel\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csprojResolveAssemblyReference.cache
+D:\Daniel\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csproj.CoreCompileInputs.cache
+D:\Daniel\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.AssemblyInfo.cs
+D:\Daniel\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.dll
+D:\Daniel\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.pdb
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.deps.json
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.json
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.dev.json
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.dll
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.pdb
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csprojResolveAssemblyReference.cache
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csproj.CoreCompileInputs.cache
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.AssemblyInfo.cs
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.dll
+B:\Google Drive\Inleiding Programeren\Week 1\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.pdb
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.deps.json
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.json
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.dev.json
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.dll
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.pdb
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csprojResolveAssemblyReference.cache
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csproj.CoreCompileInputs.cache
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.AssemblyInfo.cs
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.dll
+B:\Google Drive\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.pdb
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.deps.json
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.json
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.dev.json
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.dll
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.pdb
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csprojResolveAssemblyReference.cache
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csproj.CoreCompileInputs.cache
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.AssemblyInfo.cs
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.dll
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.pdb

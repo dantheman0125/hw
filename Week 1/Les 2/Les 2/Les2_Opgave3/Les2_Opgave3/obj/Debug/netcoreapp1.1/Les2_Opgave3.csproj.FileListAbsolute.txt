@@ -1,0 +1,10 @@
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\bin\Debug\netcoreapp1.1\Les2_Opgave3.deps.json
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\bin\Debug\netcoreapp1.1\Les2_Opgave3.runtimeconfig.json
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\bin\Debug\netcoreapp1.1\Les2_Opgave3.runtimeconfig.dev.json
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\bin\Debug\netcoreapp1.1\Les2_Opgave3.dll
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\bin\Debug\netcoreapp1.1\Les2_Opgave3.pdb
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\obj\Debug\netcoreapp1.1\Les2_Opgave3.csprojResolveAssemblyReference.cache
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\obj\Debug\netcoreapp1.1\Les2_Opgave3.csproj.CoreCompileInputs.cache
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\obj\Debug\netcoreapp1.1\Les2_Opgave3.AssemblyInfo.cs
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\obj\Debug\netcoreapp1.1\Les2_Opgave3.dll
+B:\HBO-ICT\Inleiding Programeren\Week 1\Les 2\Les 2\Les2_Opgave3\Les2_Opgave3\obj\Debug\netcoreapp1.1\Les2_Opgave3.pdb

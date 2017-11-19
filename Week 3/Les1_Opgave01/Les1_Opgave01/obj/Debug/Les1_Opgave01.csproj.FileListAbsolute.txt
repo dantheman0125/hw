@@ -1,0 +1,10 @@
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\bin\Debug\Les1_Opgave01.exe.config
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\bin\Debug\Les1_Opgave01.exe
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\bin\Debug\Les1_Opgave01.pdb
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\obj\Debug\Les1_Opgave01.csprojResolveAssemblyReference.cache
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\obj\Debug\Les1_Opgave01.Rente.resources
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\obj\Debug\Les1_Opgave01.Properties.Resources.resources
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\obj\Debug\Les1_Opgave01.csproj.GenerateResource.Cache
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\obj\Debug\Les1_Opgave01.csproj.CoreCompileInputs.cache
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\obj\Debug\Les1_Opgave01.exe
+B:\HBO-ICT\Inleiding Programeren\Week 3\Les1_Opgave01\Les1_Opgave01\obj\Debug\Les1_Opgave01.pdb
