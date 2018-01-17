@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "consoleapp3/1.0.0": {
+      "ConsoleApp3/1.0.0": {
         "runtime": {
           "ConsoleApp3.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "consoleapp3/1.0.0": {
+    "ConsoleApp3/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -46,3 +46,14 @@ B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.
 B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.AssemblyInfo.cs
 B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.dll
 B:\HBO-ICT\Inleiding Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.pdb
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.deps.json
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.json
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.runtimeconfig.dev.json
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.dll
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\bin\Debug\netcoreapp1.1\ConsoleApp3.pdb
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csprojResolveAssemblyReference.cache
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.csproj.CoreCompileInputs.cache
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.AssemblyInfoInputs.cache
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.AssemblyInfo.cs
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.dll
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 1\ConsoleApp3\obj\Debug\netcoreapp1.1\ConsoleApp3.pdb

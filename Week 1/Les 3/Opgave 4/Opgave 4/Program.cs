@@ -6,61 +6,28 @@ namespace Opgave_4
     {
         static void Main(string[] args)
         {
-            double km = 0;
-            double liter = 0;
-            double kilom = 0;
-            double literr = 0;
+            double km = 0, liter = 0, totalkm = 0, totalliter = 0;
+            //double literr = 0;
 
-            for (; ; )
+            for (; ;)
             {
-                Console.WriteLine("Hoeveel km heeft u gerenden sinds de vorige tankbeurt ");
+                Console.WriteLine("Hoeveel km heeft u gereden sinds de vorige tankbeurt ");
                 km = int.Parse(Console.ReadLine());
-                kilom = kilom + km;
+                totalkm += km;
 
                 Console.WriteLine("Hoeveel liter heeft u op die tankbeurt getankd ");
                 liter = int.Parse(Console.ReadLine());
-                literr = literr + liter;
+                totalliter += liter;
 
                 if (liter == 0)
                 {
-                    double average = kilom / literr;
-                    double average100 = literr*100/kilom;
-                    Console.WriteLine("U rijdt 1 op " + average + " en per 100km verbruikt u " + average100 + " Liter");
+                    double average1 = totalkm / totalliter;
+                    double average2 = totalliter * 100 / totalkm;
+                    Console.WriteLine("U rijdt 1 op {0} en per 100km verbruikt u {1} Liter", average1,average2);
                     Console.ReadLine();
                     break;
                 }
             }
-
-            /*
-            int totaal = int.Parse(Console.ReadLine());
-            int[] liter = new int[totaal];
-            int[] km = new int[totaal];
-            int average = 0;
-            int kilom = 0;
-            int literr = 0;
-
-            for (int i = 0; i < 999; i++)
-            {
-                Console.WriteLine("Hoeveel km heeft u gerenden sinds de vorige tankbeurt ", i + 1);
-                km[i] = int.Parse(Console.ReadLine());
-                kilom = kilom + km[i];
-
-                Console.WriteLine("Hoeveel liter heeft u op die tankbeurt getankd ", i + 1);
-                liter[i] = int.Parse(Console.ReadLine());
-                literr = literr + liter[i];
-
-                if (liter[i] == 0)
-                {
-
-                    average = (kilom / literr);
-                    Console.WriteLine("Het gemiddelde is: 1/" + average);
-                    Console.ReadLine();
-                    break;
-
-                }
-
-            } 
-            */
         }
     }
 }
