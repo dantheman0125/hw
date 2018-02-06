@@ -1,5 +1,0 @@
-B:\Google Drive\Inleiding Programeren\Week 3\Opgave 1\Opgave 1\obj\Debug\Opgave 1.csprojResolveAssemblyReference.cache
-B:\Google Drive\Inleiding Programeren\Week 3\Opgave 1\Opgave 1\obj\Debug\Opgave_1.Form1.resources
-B:\Google Drive\Inleiding Programeren\Week 3\Opgave 1\Opgave 1\obj\Debug\Opgave_1.Properties.Resources.resources
-B:\Google Drive\Inleiding Programeren\Week 3\Opgave 1\Opgave 1\obj\Debug\Opgave 1.csproj.GenerateResource.Cache
-B:\Google Drive\Inleiding Programeren\Week 3\Opgave 1\Opgave 1\obj\Debug\Opgave 1.csproj.CoreCompileInputs.cache
