@@ -7,16 +7,13 @@ namespace Opgave_2
     {
         static void Main(string[] args)
         {
-            double uitkomst=0;
-
-
-            for (int i = 0; i < 11; i++)
+            double getal = 2;
+            for (int i = 1; i < 10; i++)
             {
-                uitkomst= (Math.Pow(2, i));
+                getal *= 2;
             }
-            Console.WriteLine("2 tot de macht 10 is: " + uitkomst);
+            Console.WriteLine(getal);
             Console.ReadLine();
-
         }
     }
 }

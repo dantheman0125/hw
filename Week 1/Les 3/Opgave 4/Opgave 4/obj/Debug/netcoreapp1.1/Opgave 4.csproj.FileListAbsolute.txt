@@ -8,3 +8,14 @@ D:\Daniel\Google Drive\Inleiding Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\
 D:\Daniel\Google Drive\Inleiding Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\Debug\netcoreapp1.1\Opgave 4.AssemblyInfo.cs
 D:\Daniel\Google Drive\Inleiding Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\Debug\netcoreapp1.1\Opgave 4.dll
 D:\Daniel\Google Drive\Inleiding Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\Debug\netcoreapp1.1\Opgave 4.pdb
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\bin\Debug\netcoreapp1.1\Opgave 4.deps.json
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\bin\Debug\netcoreapp1.1\Opgave 4.runtimeconfig.json
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\bin\Debug\netcoreapp1.1\Opgave 4.runtimeconfig.dev.json
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\bin\Debug\netcoreapp1.1\Opgave 4.dll
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\bin\Debug\netcoreapp1.1\Opgave 4.pdb
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\Debug\netcoreapp1.1\Opgave 4.csprojResolveAssemblyReference.cache
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\Debug\netcoreapp1.1\Opgave 4.csproj.CoreCompileInputs.cache
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\Debug\netcoreapp1.1\Opgave 4.AssemblyInfoInputs.cache
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\Debug\netcoreapp1.1\Opgave 4.AssemblyInfo.cs
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\Debug\netcoreapp1.1\Opgave 4.dll
+D:\Daniel\HBO-ICT\Programeren\Week 1\Les 3\Opgave 4\Opgave 4\obj\Debug\netcoreapp1.1\Opgave 4.pdb

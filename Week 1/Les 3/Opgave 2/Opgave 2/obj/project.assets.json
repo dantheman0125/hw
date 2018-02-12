@@ -7045,11 +7045,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\Daniel\\Google Drive\\Inleiding Programeren\\Week 1\\Les 3\\Opgave 2\\Opgave 2\\Opgave 2.csproj",
+      "projectUniqueName": "D:\\Daniel\\HBO-ICT\\Programeren\\Week 1\\Les 3\\Opgave 2\\Opgave 2\\Opgave 2.csproj",
       "projectName": "Opgave 2",
-      "projectPath": "D:\\Daniel\\Google Drive\\Inleiding Programeren\\Week 1\\Les 3\\Opgave 2\\Opgave 2\\Opgave 2.csproj",
+      "projectPath": "D:\\Daniel\\HBO-ICT\\Programeren\\Week 1\\Les 3\\Opgave 2\\Opgave 2\\Opgave 2.csproj",
       "packagesPath": "C:\\Users\\Dan\\.nuget\\packages\\",
-      "outputPath": "D:\\Daniel\\Google Drive\\Inleiding Programeren\\Week 1\\Les 3\\Opgave 2\\Opgave 2\\obj\\",
+      "outputPath": "D:\\Daniel\\HBO-ICT\\Programeren\\Week 1\\Les 3\\Opgave 2\\Opgave 2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7060,12 +7060,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {}
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {

@@ -50,15 +50,12 @@ namespace ConsoleApp3
             Console.WriteLine("OPGAVE 3");
             Console.WriteLine("");
 
-
             int celsius, fahr;
             Console.WriteLine("Convert Celsius (C) to Fahrenheit (F): ");
             celsius = int.Parse(Console.ReadLine());
             fahr = (celsius * 9) / 5 + 32;
             Console.WriteLine("Temperature in Fahrenheit (F) is : " + fahr);
             Console.ReadLine();
-
-            Console.Clear();
 
             float celsi, Fahr;
             Console.WriteLine("Convert Fahrenheit (F) to Celsius (C): ");
@@ -67,16 +64,12 @@ namespace ConsoleApp3
             Console.WriteLine("Temperature in Celsius (C) is : " + celsi);
             Console.ReadLine();
 
-            Console.Clear();
-
             float Celsius, kelvin;
             Console.WriteLine("Convert Celsius (C) to Kelvin (K): ");
             Celsius = float.Parse(Console.ReadLine());
             kelvin = Celsius + 273.15f;
             Console.WriteLine("Temperature in Kelvin (K) is : " + kelvin);
             Console.ReadLine();
-
-            Console.Clear();
 
             float Celsi, Kelvin;
             Console.WriteLine("Convert Kelvin (K) to Celsius (C): ");
@@ -87,17 +80,23 @@ namespace ConsoleApp3
 
             Console.Clear();
 
+            Console.WriteLine("OPGAVE 5");
+            Console.WriteLine("");
+
             float eur;
             float usd = 1.2231f;
             float conversion;
 
-            Console.Write("Aantal Euro voor conversie: ");
+            Console.Write("Hoeveel Euro wilt u omrekenen naar USD: ");
             eur = float.Parse(Console.ReadLine());
             conversion = (usd * eur);
             Console.WriteLine(eur + " EUR is gelijk aan $" + conversion + " USD");
             Console.ReadLine();
 
             Console.Clear();
+
+            Console.WriteLine("OPGAVE 6");
+            Console.WriteLine("");
 
             String Naam;
             String familie;
