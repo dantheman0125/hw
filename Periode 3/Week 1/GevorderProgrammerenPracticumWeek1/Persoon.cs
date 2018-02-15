@@ -34,19 +34,25 @@ namespace GevorderProgrammerenPracticumWeek1
             return voornaam +" "+ achternaam;
         }
         /// <summary>
-        /// 
+        /// voor het opvragen van de lijst huisdieren
         /// </summary>
-        /// <returns></returns>
+        /// <returns>huisdieren</returns>
         public List<Huisdier> getHuisdieren()
         {
             return huisdieren;
         }
-
+        /// <summary>
+        /// de lijst wordt gevuld met de naam en de soort
+        /// </summary>
+        /// <param name="huisdier"></param>
         public void addHuisdier(Huisdier huisdier)
         {
             huisdieren.Add(huisdier);
         }
-
+        /// <summary>
+        /// voor het opvragen van de leeftijd
+        /// </summary>
+        /// <returns>leeftijd</returns>
         public int getLeeftijd()
         {
             return leeftijd;
