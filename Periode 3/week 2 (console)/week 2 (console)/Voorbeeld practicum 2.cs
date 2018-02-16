@@ -4,15 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace week_2
+namespace GevorderdProgrammerenPracticumWeek2
 {
-    public abstract class Person
+    class Program
     {
-        protected string name;
-
-        public string GetName()
+        static void Main(string[] args)
         {
-            return name;
         }
     }
 }

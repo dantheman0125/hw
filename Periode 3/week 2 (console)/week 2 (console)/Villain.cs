@@ -11,9 +11,19 @@ namespace week_2
         private List<Minion> minions;
         private List<string> strengths;
 
-        public Villain (string name)
+        public Villain (string name, int Evilness)
         {
             this.name = name;
+            if (Evilness >= 0 && Evilness <= 100)
+            {
+                this.Evilness = Evilness;
+            }
+            else
+            {
+                this.Evilness = 50;
+            }
+            minions = new List<Minion>();
+            strengths = new List<string>();
         }
 
         public void AddMinion(Minion minion)

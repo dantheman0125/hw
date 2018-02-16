@@ -10,9 +10,10 @@ namespace week_2
     {
         private string weakness;
 
-        public Minion(string name)
+        public Minion(string name, string weakness)
         {
             this.name = name;
+            this.weakness = weakness;
         }
 
         public string GetWeakness()

@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace week_2
 {
-    public abstract class Person
+    public interface IHasStrengths
     {
-        protected string name;
-
-        public string GetName()
-        {
-            return name;
-        }
+        void AddStrength(string strength);
+        List<string> GetStrengths();
     }
 }

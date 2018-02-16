@@ -9,10 +9,17 @@ namespace week_2
     public abstract class Person
     {
         protected string name;
+        protected int Evilness;
 
         public string GetName()
         {
             return name;
         }
+
+        public int GetEvilness()
+        {
+            return Evilness;
+        }
+
     }
 }
