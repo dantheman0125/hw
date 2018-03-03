@@ -10,17 +10,18 @@ namespace Opgave_5
     {
         static void Main(string[] args)
         {
+            int k = 1;
+            Console.WriteLine("hoeveel mensen zitten er in de klas?");
+            k = int.Parse(Console.ReadLine());
+
             Console.WriteLine("vul de naam in van de personen");
-            string[] names = new string[99];
-            int j = 0;
-            for (int i = 0; i < 99; i++)
+            string[] names = new string[k];
+
+            for (int i = 0; i < k; i++)
             {
                 names[i] = (Console.ReadLine());
-                j++;
                 if (names[i]=="") { break; }
             }
-            j--;
-            Console.WriteLine("Er gaan {0} mensen mee",j);
             Console.ReadLine();
         }
     }

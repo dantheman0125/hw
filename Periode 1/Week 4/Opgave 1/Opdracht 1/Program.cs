@@ -37,12 +37,12 @@ namespace Opdracht_1
                 Console.WriteLine(result3());
                 Console.ReadLine();
                 Console.Clear();
-
+                
                 Console.WriteLine("Opgave 1.6");
                 Console.WriteLine("");
                 Console.WriteLine("Voer tekst in");
                 string txt = Console.ReadLine();
-                Console.WriteLine("De opgegeven tekst bevat {0} woorden",wordcounter(txt));
+                Console.WriteLine("De opgegeven tekst bevat {0} woorden",wordcounter2(txt));
                 Console.ReadLine();
                 Console.Clear();
             }
@@ -127,15 +127,36 @@ namespace Opdracht_1
 
         public static int wordcounter(string txt)
         {
-            int count = 1;
-            for (int i = 1; i < txt.Length; i++)
+            int count = 0;
+            int index = 0;
+            while (index < txt.Length)
             {
-                if (char.IsWhiteSpace(txt, i-1) == true)
+                if (!char.IsWhiteSpace(txt[index]))
                 {
                     count++;
                 }
+
+                while (index < txt.Length && !char.IsWhiteSpace(txt[index]))
+                {
+                    index++;
+                }
+                while (index<txt.Length && char.IsWhiteSpace(txt[index]))
+                {
+                    index++;
+                }
             }
-            if (txt == "" || txt == " "|| txt == "  " || txt == "   " || txt == "    " || txt == "     ") { count = 0; }
+            return count;
+        }
+        public static int wordcounter2(string txt)
+        {
+            bool flag = false;
+            int count = 0;
+            for (int index =0; index<txt.Length; index++)
+            {
+                bool ws = char.IsWhiteSpace(txt[index]);
+                if (!flag && !ws)count++;
+                flag = !ws; 
+            }
             return count;
         }
     }
