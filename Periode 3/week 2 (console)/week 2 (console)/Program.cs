@@ -11,7 +11,6 @@ namespace week_2
         static void Main(string[] args)
         {
 
-
             Villain ozymandias = new Villain("Adrian Veidt", 60);
             Villain joker = new Villain("Mr. J", 70);
             Person robin = new Hero("Jason Todd", joker, 30);
@@ -45,8 +44,8 @@ namespace week_2
                 Console.WriteLine(minion.GetEvilness());
                 Console.WriteLine(minion.GetWeakness());
             }
-            Console.ReadKey();
 
+            Console.ReadKey();
         }
     }
 }
