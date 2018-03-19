@@ -10,7 +10,7 @@ namespace week_3
     {
         public void push (T item)
         {
-
+            
         }
 
         public T Pop()
@@ -20,7 +20,12 @@ namespace week_3
 
         public bool IsEmpty()
         {
-            if 
+            bool check = false;
+            if ()
+            {
+                check=true;
+            }
+            return check;
         }
     }
 }
