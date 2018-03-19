@@ -1,0 +1,22 @@
+﻿body {
+    background-color: antiquewhite;
+}
+
+.brand-logo {
+    text-shadow: 2px 2px 20px black;
+    font-family: 'Great Vibes', cursive;
+}
+
+.headtxt h1 {
+    font-family: 'Marck Script', cursive;
+    font-size: 1.9rem;
+}
+
+.headtxt p {
+    font-family: Arial;
+    font-size: 1.3rem;
+}
+
+.nav-wrapper img {
+    position: center;
+}
