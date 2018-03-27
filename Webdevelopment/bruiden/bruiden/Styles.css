@@ -19,4 +19,8 @@
 
 .nav-wrapper img {
     position: center;
+    margin-top:5px;
+}
+.nav-wrapper span{
+    margin-top: 1px;
 }
