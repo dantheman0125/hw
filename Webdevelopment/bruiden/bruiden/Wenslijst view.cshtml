@@ -1,0 +1,21 @@
+﻿@{
+    Page.Title = "Wenslijst";
+}
+
+@RenderPage("~/Layout/Header.cshtml")
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="~/index.cshtml" class="brand-logo center">a Special Day</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="~/index.cshtml">Home</a></li>
+            <li class="active"><a href="#!">Wenslijst</a></li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="~/Login.cshtml">Login</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+@RenderPage("~/Layout/Footer.cshtml")
