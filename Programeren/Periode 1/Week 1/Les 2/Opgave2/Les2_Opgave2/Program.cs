@@ -24,7 +24,7 @@ namespace Les2_Opgave2
                     Console.WriteLine("Tot ziens in het Fries is: Oant Sjen!");
                     break;
                 case "noors":
-                    Console.WriteLine("Tot ziens in het Noors is: ha det bra");
+                    Console.WriteLine("Tot ziens in het Fries is: ha det bra");
                     break;
                 default:
                     Console.WriteLine("Deze vertaling is niet mogelijk");

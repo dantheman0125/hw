@@ -9,7 +9,7 @@ namespace Opgave_2
             int[] numbers = new int[10];
             int invoer;
 
-            Console.WriteLine("Voer 9 hele getallen in   (Druk op Enter na elk getal)");
+            Console.WriteLine("Voer 9 getallen in   (Druk op Enter na elk getal)");
             for (int i =1;i < 10; i++)
             {
                 numbers[i]=Convert.ToInt32(Console.ReadLine());
