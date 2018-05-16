@@ -1,0 +1,69 @@
+﻿@{Page.Title = "Login"; }
+
+@RenderPage("~/Layout/Header.cshtml")
+
+@*Als de gebruiker via de url bij deze pagina terecht komt, wordt de gebruiker naar de wishlist door gestuurd*@
+@if(Session["id"] != null) { Response.Redirect("~/Wishlist.cshtml"); }
+
+@{
+
+    // Validations
+    Validation.Add("email", Validator.StringLength(50, 3, "Email is ongeldig"));
+    Validation.Add("password", Validator.StringLength(15, 3, "Wachtwoord moet tussen 3 en 15 karakters zijn"));
+
+    
+    Database db = Database.Open("asdDbCntStrng");
+
+    if (IsPost && Validation.IsValid())
+    {
+        string email = Request.Form["email"];
+        string password = Request.Form["password"];
+
+        //controle op gebruikersnaam en wachtwoord
+        var userid = db.QueryValue("SELECT Id FROM Users WHERE Email = @0 AND Password = @1", email, password);
+
+        if (userid == null)
+        {
+            ModelState.AddFormError("De gebruikersnaam en/of wachtwoord is fout ingevoerd");
+        }
+        else
+        {
+            Session["id"] = userid;
+            Response.Redirect("~/Wishlist.cshtml");
+
+        }
+    }
+
+    db.Dispose();
+}
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="~/" class="brand-logo center">a Special Day</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="~/Default.cshtml">Home</a></li>
+            <li><a href="~/Wishlist.cshtml">Wenslijst</a></li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="~/Register.cshtml">Registreren</a></li>
+            <li class=" active"><a href="#!">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="background">
+    <div class="white-box">
+        <div class="container">
+            <div class="box">
+                <h1 span="" style="text-align: center;">Login</h1>
+                <form method="post">
+                    E-mail<input type="text" name="email" value="@Request.Form["email"]" />
+                    Wachtwoord<input type="password" name="password" />
+                    <button type="submit">Inloggen</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@RenderPage("~/Layout/Footer.cshtml")

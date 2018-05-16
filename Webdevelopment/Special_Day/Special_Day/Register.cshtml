@@ -1,0 +1,86 @@
+﻿@{Page.Title = "Registreren"; }
+
+@RenderPage("~/Layout/Header.cshtml")
+
+@*Als de gebruiker via de url bij deze pagina terecht komt, wordt de gebruiker naar de wishlist door gestuurd*@
+@if (Session["id"] != null) { Response.Redirect("~/Wishlist.cshtml"); }
+
+@{
+    // open database connectie
+    Database db = Database.Open("asdDbCntStrng");
+
+    if (IsPost && Validation.IsValid())
+    {
+        string surname = Request.Form["surname"];
+        string email = Request.Form["email"];
+        string password = Request.Form["password"];
+        
+        // kijkt of de gebruiker al bestaat
+        var Check_email = db.QuerySingle("Select * from Users where Email = @0", "email");
+
+        // voeg de gebruiker toe tenzij deze al bestaat
+        if (Check_email == null)
+        {
+            string insert = "INSERT INTO users (Surname, Email, Password) VALUES (@0, @1, @2)";
+            db.Execute(insert, surname, email, password);
+
+            var userid = db.QueryValue("SELECT Id FROM Users WHERE Email = @0 AND Password = @1", email, password);
+
+            Session["id"] = userid;
+            Response.Redirect("~/Wishlist.cshtml");
+        }
+        else
+        {
+            // als de gebruiker al bestaat, word dit bericht weergegeven
+            ModelState.AddFormError("De ingevulde email is al in gebruik");
+        }
+    }
+
+    // Validations
+    Validation.Add("surname", Validator.StringLength(50, 3, "Email is ongeldig"));
+    Validation.Add("email", Validator.StringLength(50, 3, "Email is ongeldig"));
+    Validation.Add("password", Validator.StringLength(15, 3, "Wachtwoord moet tussen 3 en 15 karakters zijn"));
+    Validation.Add("confirm_password", Validator.EqualsTo("password", "De wachtwoorden komen niet overeen"));
+
+    // sluit database connectie
+    db.Dispose();
+}
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="~/" class="brand-logo center">a Special Day</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="~/Default.cshtml">Home</a></li>
+            <li><a href="~/Wishlist.cshtml">Wenslijst</a></li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="#!">Registreren</a></li>
+            <li><a href="~/Login.cshtml">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="background">
+    <div class="white-box">
+        <div class="container">
+            <div class="box">
+                <h1 span="" style="text-align: center;">Registreren</h1>
+                <p>Vul deze gegevens in voor het maken van een profiel</p>
+                <form method="post">
+                    Achternaam<input type="text" name="surname" value="@Request.Form["surname"]" />
+                    <label class="validation-wrong">@Html.ValidationMessage("surname")</label>
+                    E-mail<input type="email" name="email" value="@Request.Form["email"]" />
+                    <label class="validation-wrong">@Html.ValidationMessage("email")</label>
+                    Wachtwoord<input type="password" name="password" />
+                    <label class="validation-wrong">@Html.ValidationMessage("password")</label>
+                    Bevestig Wachtwoord<input type="password" name="confirm_password" />
+                    <label class="validation-wrong">@Html.ValidationMessage("confirm_password")</label>
+
+                    <button type="submit">registreren</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@RenderPage("~/Layout/Footer.cshtml")

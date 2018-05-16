@@ -1,0 +1,192 @@
+﻿@{Page.Title = "Wenslijst";}
+
+@RenderPage("~/Layout/Header.cshtml")
+
+@{
+    // kijkt of er al een sessie is
+    if (Session["id"] == null)
+    {
+        Validation.Add("code", Validator.Integer("Voer een getal in"));
+
+        if (IsPost && Validation.IsValid())
+        {
+            string code = Request.Form["code"];
+            Response.Redirect("~/Wishlist_view.cshtml?code=" + code);
+        }
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="~/" class="brand-logo center">a Special Day</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="~/Default.cshtml">Home</a></li>
+                    <li class="active"><a href="~/Wishlist.cshtml">Wenslijst</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="~/Register.cshtml">Registreren</a></li>
+                    <li><a href="~/Login.cshtml">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="wishes">
+            <div class="container">
+                <div class="box">
+                    <h1 span="" style="text-align: center;">Wenslijst: </h1>
+                    <p>
+                        Bovenaan staat hetgeen dat het bruidspaar het liefste krijgt. Des te lager in de tabel de lager de prioriteit
+                    </p>
+                </div>
+            </div>
+            <div class="lijstie">
+                <div class="container">
+                    <p>Vul de code in die u van het bruidspaar heeft ontvangen.</p>
+                    <form method="post">
+                        Vul hier de code in<input type="number" name="code" value="@Request.Form["code"]" />
+                        <label class="validation-wrong"><font color="black">@Html.ValidationMessage("code")</font></label>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    }
+    else
+    {
+        {
+
+            Database db = Database.Open("asdDbCntStrng");
+
+            string cadeau = Request.Form["cadeau"];
+            string beschrijving = Request.Form["beschrijving"];
+            Validation.Add("cadeau", Validator.StringLength(15, 3, "de cadeau-naam moet tussen 3 en 50 karakters zijn"));
+            Validation.Add("beschrijving", Validator.StringLength(50, 0, "de beschrijving mag niet meer dan 50 karakters zijn"));
+
+            var gifts = db.QueryValue("SELECT * FROM wishlists WHERE wishlistId = @0", Session["id"]);
+
+            if (!Request.QueryString["deleteId"].IsEmpty() && Request.QueryString["deleteId"].IsInt())
+            {
+                int deleteid = Request.QueryString["deleteId"].AsInt();
+
+                string delete = "DELETE FROM wishlists WHERE Id = @0";
+                db.Execute(delete, deleteid);
+                Response.Redirect("~/Wishlist_view.cshtml?code=" + deleteid);
+            }
+
+            if (IsPost && Validation.IsValid())
+            {
+                var newprio = db.QueryValue("SELECT MAX(Prioriteit) FROM wishlists WHERE wishlistId = @0", Session["id"]);
+
+                if (newprio is DBNull)
+                {
+                    newprio = 1;
+                }
+                else
+                {
+                    newprio++;
+                }
+
+                string insert = "INSERT INTO wishlists (WishlistId, Prioriteit, Cadeau, beschrijving, gekocht) VALUES (@0, @1, @2, @3, @4)";
+                db.Execute(insert, Session["id"], newprio, cadeau, beschrijving, "Nee");
+
+                if (newprio == 1)
+                {
+                    Response.Redirect("~/Wishlist.cshtml");
+                }
+            }
+
+            //if (Request.) ;
+
+            var rows = db.Query("SELECT * FROM Wishlists WHERE wishlistId = @0 ORDER BY Prioriteit ASC", Session["id"]);
+
+
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="~/Default.cshtml" class="brand-logo center">a Special Day</a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="~/Default.cshtml">Home</a></li>
+                        <li class="active"><a href="~/Wishlist.cshtml">Wenslijst</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="~/Logout.cshtml">Uitloggen</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="wishes">
+                <div class="container">
+                    <div class="box">
+                        <h1 span="" style="text-align: center;">Wenslijst: </h1>
+                        <h2 span="" style="text-align: center;">Jouw code: @Session["id"]</h2>
+                        <p>
+                            Voeg hier de items toe die je graag cadeau zou willen krijgen. Bovenaan in de tabel staat hetgeen dat jij en jouw partner het liefste willen.
+                            Je kan deze prioriteit aanpassen door de kollom te verslepen.
+                        </p>
+                        <form method="post">
+                            Cadeau<input type="text" name="cadeau" value="@Request.Form["cadeau"]" />
+                            <label class="validation-wrong"><font color="black">@Html.ValidationMessage("cadeau")</font></label>
+                            <br>
+                            beschrijving<input type="text" name="beschrijving" value="@Request.Form[" beschrijving"]" />
+                            <label class="validation-wrong"><font color="black">@Html.ValidationMessage("beschrijving")</font></label>
+                            <button type="submit">Voeg toe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="lijstie">
+                    <div class="container">
+
+                        @if (gifts == null) //krijgt niets terug van de database
+                        {
+                            <p>Er zijn nog geen items toegevoegd aan uw wenstlijst. Hierboven kunt u ze toevoegen </p>
+                        }
+                        else
+                        {
+                            <ul class="list-group" id="sortable">
+                                @foreach (var row in rows)
+                                {
+                                    <li class="list-group-item gift ui-state-default" id=id_@row.Id>@row.Prioriteit. <b>@row.Cadeau</b> - @row.beschrijving (Gekocht: @row.gekocht) <a href="~/Wishlist.cshtml?deleteId=@row.Id">Verwijder</a></li>
+                                }
+                            </ul>
+                        
+                            <button class="waves-effect waves-light btn" id="btnSave">Opslaan</button>
+
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+}
+
+@RenderPage("~/Layout/Footer.cshtml")
+
+<script src="~/Scripts/jquery-ui.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        $("#sortable").sortable();
+
+        $("#btnSave").on('click', function () {
+            var newprios = [];
+
+            var lijst = $("#sortable");
+            $.each(lijst.children(), function (positie, object) {
+                positie++;
+                var objectId = object.id;
+                objectId = objectId.split("_")[1];
+                newprios.push(positie + "_" + objectId);
+            });
+            console.log("pino");
+
+            $.ajax({
+                type: 'POST',
+                url: 'Ajax/UpdateGiftListOrder',
+                data: JSON.stringify(newprios),
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                complete: function (msg) {
+                    window.location.replace("Wishlist.cshtml");
+                }
+            });
+        });
+    });
+</script> 

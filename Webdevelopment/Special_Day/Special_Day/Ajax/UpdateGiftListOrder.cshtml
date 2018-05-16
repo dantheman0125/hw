@@ -1,0 +1,16 @@
+﻿@{
+    string json;
+    using (var Reader = new StreamReader(Request.InputStream))
+    {
+        json = Reader.ReadToEnd();
+    }
+    var newprios = Json.Decode(json);
+    foreach (var newprio in newprios)
+    {
+        int position = Convert.ToInt32(newprio.Split('_')[0]);
+        int gift_id = Convert.ToInt32(newprio.Split('_')[1]);
+
+        var db = Database.Open("asdDbCntStrng");
+        var row = db.Execute("UPDATE wishlists SET Prioriteit=@0 WHERE Id = @1", position, gift_id);
+    }
+}

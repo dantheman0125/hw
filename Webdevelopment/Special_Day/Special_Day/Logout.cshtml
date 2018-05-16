@@ -1,0 +1,8 @@
+﻿@{
+    //als er een sessie is, verwijder de sessie
+    if (Session["id"] != null)
+    {
+        Session.Remove("id");
+    }
+    Response.Redirect("~/Default");
+}

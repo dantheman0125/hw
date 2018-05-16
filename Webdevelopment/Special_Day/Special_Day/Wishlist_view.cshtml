@@ -1,0 +1,92 @@
+﻿@{Page.Title = "Wenslijst";}
+
+@RenderPage("~/Layout/Header.cshtml")
+
+@{
+    // kijkt of er al een sessie is
+    if (Session["id"] == null)
+    {
+        string code = Request.QueryString["code"];
+
+        Database db = Database.Open("asdDbCntStrng");
+
+        string famnaam = db.QueryValue("SELECT Surname FROM users WHERE Id = @0", code);
+        var rows = db.Query("SELECT * FROM Wishlists WHERE wishlistId = @0 AND gekocht = @1 ORDER BY Prioriteit ASC", code, "nee");
+
+        if (!Request.QueryString["buyid"].IsEmpty()&& Request.QueryString["buyid"].IsInt())
+        {
+            int buyid = Request.QueryString["buyid"].AsInt();
+
+            string update = "UPDATE wishlists SET gekocht = @0 WHERE Id=@1";
+            db.Execute(update, "Ja", buyid);
+            Response.Redirect("~/Wishlist_view.cshtml?code=" + code);
+        }
+        db.Dispose();
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="~/" class="brand-logo center">a Special Day</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="~/Default.cshtml">Home</a></li>
+                    <li class="active"><a href="~/Wishlist.cshtml">Wenslijst</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="~/Register.cshtml">Registreren</a></li>
+                    <li><a href="~/Login.cshtml">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="wishes">
+                <div class="container">
+                    <div class="box">
+                        <h1 span="" style="text-align: center;">Wenslijst: </h1>
+                        <p>
+                            Bovenaan staat hetgeen dat het bruidspaar het liefste krijgt. Des te lager in de tabel de lager de prioriteit
+                        </p>
+                    </div>
+                </div>
+                <div class="lijstie">
+                    <div class="container">
+                        @if (rows == null) //krijgt niets terug van de database
+                        {
+                            <p>Er zijn nog geen items toegevoegd aan de wenstlijst. Controleer de ingevoerde code.</p>
+                        }
+                        else
+                        {
+                            <p>
+                                Hieronder staan de cadeaus die het bruidspaar @famnaam. Bovenaan in de tabel staat hetgeen dat het bruidspaar het liefste wil hebben.
+                            </p>
+
+                            <table style="width:95%">
+                                <tr>
+                                    <th>Prioriteit</th>
+                                    <th>Cadeau</th>
+                                    <th>beschrijving</th>
+                                    <th>Kopen?</th>
+                                </tr>
+                                @foreach (var row in rows)
+                                {
+                                    <tr>
+                                        <th>@row.Prioriteit</th>
+                                        <th>@row.Cadeau</th>
+                                        <th>@row.beschrijving</th>
+                                        <th><button type="submit"><a href="~/Wishlist_view.cshtml?code=@code&buyid=@row.Id">ja</a></button></th>
+                                    </tr>
+                                }
+                            </table>
+                        }
+                    </div>
+                </div>
+            </div>
+            
+        }
+        else
+        {
+        Response.Redirect("~/Wishlist.cshtml");
+        }
+    }
+
+
+
+
+@RenderPage("~/Layout/Footer.cshtml")

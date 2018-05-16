@@ -1,0 +1,77 @@
+﻿body {
+    background-color: antiquewhite;
+}
+body {
+    background-image: url("/Images/bg.jpg");
+    height: -webkit-fill-available;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-wrapper .brand-logo {
+    text-shadow: 2px 2px 20px black;
+    font-family: 'Great Vibes', cursive;
+}
+
+.container h1 {
+    font-family: 'Brush Script MT';
+    font-size: 5.9rem;
+}
+
+.headtxt p {
+    font-family: Arial;
+    font-size: 1.3rem;
+}
+
+.nav-wrapper img {
+    position: center;
+    margin-top: 5px;
+}
+
+.nav-wrapper span {
+    margin-top: 1px;
+}
+
+.welcome div.nav-wrapper {
+    margin-top: 5%;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    width: 50%;
+}
+.whitebox .container {
+    width: 30%;
+}
+
+.wishes .container {
+    width: 40%;
+    text-align: center;
+}
+
+.container .box {
+    margin: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    font-size:18px;
+}
+
+.container .box p {
+    font-size: 16px;
+    text-align:center;
+}
+
+.lijstie .container li{
+    font-size:22px;
+}
+
+.lijstie .container li.gift:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.box h2{
+    font-size:28px
+}
