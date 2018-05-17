@@ -7,6 +7,7 @@
     if (Session["id"] == null)
     {
         Validation.Add("code", Validator.Integer("Voer een getal in"));
+        
 
         if (IsPost && Validation.IsValid())
         {
@@ -59,7 +60,7 @@
 
             string cadeau = Request.Form["cadeau"];
             string beschrijving = Request.Form["beschrijving"];
-            Validation.Add("cadeau", Validator.StringLength(15, 3, "de cadeau-naam moet tussen 3 en 50 karakters zijn"));
+            Validation.Add("cadeau", Validator.StringLength(50, 3, "de cadeau-naam moet tussen 3 en 50 karakters zijn"));
             Validation.Add("beschrijving", Validator.StringLength(50, 0, "de beschrijving mag niet meer dan 50 karakters zijn"));
 
             var gifts = db.QueryValue("SELECT * FROM wishlists WHERE wishlistId = @0", Session["id"]);
@@ -120,13 +121,15 @@
                         <h2 span="" style="text-align: center;">Jouw code: @Session["id"]</h2>
                         <p>
                             Voeg hier de items toe die je graag cadeau zou willen krijgen. Bovenaan in de tabel staat hetgeen dat jij en jouw partner het liefste willen.
-                            Je kan deze prioriteit aanpassen door de kollom te verslepen.
+                            Je kan deze prioriteit aanpassen door het item naar boven of naar beneden te verslepen. Vergeet niet om op opslaan te klikken om de volgorde van de prioriteit op te slaan.
+                            <br/><br/>
+                            De bovenstaande code kan worden gedeeld met vrienden en/of familie zodat zij de wenslijst in kunnen zien. Zij kunnen hierin ook aangeven welk cadeau ze willen kopen.
                         </p>
                         <form method="post">
-                            Cadeau<input type="text" name="cadeau" value="@Request.Form["cadeau"]" />
+                            Cadeau<input type="text" name="cadeau" />
                             <label class="validation-wrong"><font color="black">@Html.ValidationMessage("cadeau")</font></label>
                             <br>
-                            beschrijving<input type="text" name="beschrijving" value="@Request.Form[" beschrijving"]" />
+                            beschrijving<input type="text" name="beschrijving"/>
                             <label class="validation-wrong"><font color="black">@Html.ValidationMessage("beschrijving")</font></label>
                             <button type="submit">Voeg toe</button>
                         </form>

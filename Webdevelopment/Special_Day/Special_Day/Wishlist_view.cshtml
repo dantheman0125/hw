@@ -54,7 +54,7 @@
                         else
                         {
                             <p>
-                                Hieronder staan de cadeaus die het bruidspaar @famnaam. Bovenaan in de tabel staat hetgeen dat het bruidspaar het liefste wil hebben.
+                                Hieronder staan de cadeaus die het bruidspaar <b>@famnaam</b>. Bovenaan in de tabel staat hetgeen dat het bruidspaar het liefste wil hebben.
                             </p>
 
                             <table style="width:95%">
@@ -70,7 +70,7 @@
                                         <th>@row.Prioriteit</th>
                                         <th>@row.Cadeau</th>
                                         <th>@row.beschrijving</th>
-                                        <th><button type="submit"><a href="~/Wishlist_view.cshtml?code=@code&buyid=@row.Id">ja</a></button></th>
+                                        <th><button type="submit" onclick="location.href='/Wishlist_view.cshtml?code=@code&buyid=@row.Id'">ja</button></th>
                                     </tr>
                                 }
                             </table>
