@@ -30,7 +30,6 @@
         {
             Session["id"] = userid;
             Response.Redirect("~/Wishlist.cshtml");
-
         }
     }
 
@@ -58,7 +57,9 @@
                 <h1 span="" style="text-align: center;">Login</h1>
                 <form method="post">
                     E-mail<input type="text" name="email" value="@Request.Form["email"]" />
+                    <label class="validation-wrong">@Html.ValidationMessage("email")</label>
                     Wachtwoord<input type="password" name="password" />
+                    <label class="validation-wrong">@Html.ValidationMessage("password")</label>
                     <button type="submit">Inloggen</button>
                 </form>
             </div>

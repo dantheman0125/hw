@@ -16,7 +16,7 @@
         string password = Request.Form["password"];
         
         // kijkt of de gebruiker al bestaat
-        var Check_email = db.QuerySingle("Select * from Users where Email = @0", "email");
+        var Check_email = db.QuerySingle("Select * from Users where Email = @0", email);
 
         // voeg de gebruiker toe tenzij deze al bestaat
         if (Check_email == null)
