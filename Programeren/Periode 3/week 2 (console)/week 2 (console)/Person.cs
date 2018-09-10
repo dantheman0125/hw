@@ -12,12 +12,9 @@ namespace week_2
     public abstract class Person
     {
         private List<Minion> minions;
-        //private Villain villain;
-        //private Hero hero;
-        //private Minion minion;
-
         protected string name;
         protected int Evilness;
+
         /// <summary>
         /// voor het opvragen van de naam.
         /// </summary>
@@ -34,22 +31,5 @@ namespace week_2
         {
             return Evilness;
         }
-
-        /*
-        private Minion Minion()
-        {
-            return minion;
-        }
-
-        private Villain Villain()
-        {
-            return villain;
-        }
-
-        private Hero Hero()
-        {
-            return hero;
-        }
-        */
     }
 }

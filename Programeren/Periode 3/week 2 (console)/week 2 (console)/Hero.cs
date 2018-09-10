@@ -32,7 +32,8 @@ namespace week_2
             }
             else
             {
-                this.Evilness = 50;
+                Random random = new Random();
+                this.Evilness = random.Next(0, 101);
             }
             strengths = new List<string>();
         }
