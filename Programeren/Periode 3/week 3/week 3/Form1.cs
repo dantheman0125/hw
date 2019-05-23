@@ -36,7 +36,7 @@ namespace week_3
             else
             {
                 txt = inputtxt.Text;
-                Stack<string> stack = new Stack<string>();
+                Stack<string> stack = new Stack<string>(txt);
             }
         }
 
